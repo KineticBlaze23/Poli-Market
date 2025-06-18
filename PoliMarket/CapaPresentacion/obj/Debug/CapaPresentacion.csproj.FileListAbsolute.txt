@@ -1,0 +1,152 @@
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket (3)\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\PoliMarket\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormLogin.resources
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormLogin.resources
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormVenta.resources
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormProducto.resources
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormCliente.resources
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.FormOpciones.resources
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

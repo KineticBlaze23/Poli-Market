@@ -1,0 +1,36 @@
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\marti\Downloads\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\P3E009-E\Downloads\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Fabio\Downloads\PoliMarket\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Victus_gaming\Desktop\PoliMarket (2)\PoliMarket\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\marti\OneDrive\Documentos\EPN\3er Semestre - 2025A\Programacion II\Proyecto\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Fabio\Downloads\PoliMarket (6)\PoliMarket\PoliMarket\CapaEntidad\obj\Debug\CapaEntidad.pdb

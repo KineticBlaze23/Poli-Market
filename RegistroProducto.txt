@@ -1,0 +1,16 @@
+IdProducto,Nombre,Precio,Stock
+1,Shampoo,5,80
+2,Jabon,2,1000
+3,Toalla,10,150
+4,Pasta Dental,3,500
+5,Cepillo de Dientes,2.5,400
+6,Desodorante,4,300
+7,Enjuague Bucal,6,200
+8,Crema Corporal,7,250
+9,Protector Solar,12,100
+10,Papel Higiénico,0.8,2000
+11,Loción,9,120
+12,Peine,1.5,350
+13,Mascarilla Facial,3.5,180
+14,Esponja de Baño,2,220
+15,Alcohol en Gel,3,600

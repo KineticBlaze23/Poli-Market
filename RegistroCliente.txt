@@ -1,0 +1,25 @@
+IdCliente,Nombre,Apellido,Cedula,CorreoElectronico,Direccion
+1,Martin,Roca,0926004045,martin.roca@epn.edu.ec,Guayaquil
+2,Ana,Pérez,0912345678,ana.perez@gmail.com,Guayaquil
+3,Carlos,Gómez,0323456789,carlos.gomez@hotmail.com,Cuenca
+4,Lucía,Moreno,1134567890,lucia.moreno@yahoo.com,Loja
+5,Pedro,Castro,1805678901,pedro.castro@outlook.com,Ambato
+7,Juan,Cedeño,1307890123,juan.cedeno@epn.edu.ec,Portoviejo
+8,Valeria,Navarro,0608901234,valeria.navarro@gmail.com,Riobamba
+10,Daniela,Vega,2300123456,daniela.vega@hotmail.com,Santo Domingo
+11,Andrés,Molina,0801122334,andres.molina@epn.edu.ec,Esmeraldas
+12,María,Guamán,0502233445,maria.guaman@gmail.com,Latacunga
+13,Jorge,Lema,0203344556,jorge.lema@hotmail.com,Guaranda
+14,Camila,Taco,2404455667,camila.taco@yahoo.com,La Libertad
+15,Esteban,Quishpe,1405566778,esteban.quishpe@outlook.com,Macas
+16,Natalia,Yumbo,2106677889,natalia.yumbo@gmail.com,Nueva Loja
+18,Elena,Chávez,0708899001,elena.chavez@hotmail.com,Machala
+19,Marco,Pilco,1909900112,marco.pilco@gmail.com,Zamora
+20,Isabel,Mena,2000111223,isabel.mena@epn.edu.ec,Puerto Ayora
+21,Luis,Toapanta,1711223344,luis.toapanta@gmail.com,Mejía
+22,Verónica,Cedeño,1722334455,veronica.cedeno@epn.edu.ec,Rumiñahui
+24,Karla,Tipán,1744556677,karla.tipan@hotmail.com,Pedro Moncayo
+26,Diana,Moreta,1766778899,diana.moreta@gmail.com,Pedro Vicente Maldonado
+28,Nicole,Yánez,1788990011,nicole.yanez@hotmail.com,Calacalí
+29,Cristian,Morocho,1799001122,cristian.morocho@gmail.com,Nanegalito
+30,Melany,Ruiz,1710012233,melany.ruiz@epn.edu.ec,Conocoto
