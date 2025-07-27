@@ -27,14 +27,13 @@
 
 ---
 
-## Integrantes del proyecto
-- Fabio Pillajo
-- Martin Roca
-- David Guerra
-- Melanie Peñafiel
-
+## Tech Stack
+- Lenguaje: C#
+- Almacenamiento: Archivos .txt
 ---
+
 ## Screenshots
+
 - Interfaz de Login
 <img width="512" height="331" alt="image" src="https://github.com/user-attachments/assets/d24d3b56-fc03-44fc-adbb-49e51c5b1f72" />
 
@@ -55,7 +54,11 @@
 - Acerca de 
 <img width="184" height="211" alt="image" src="https://github.com/user-attachments/assets/a66d6277-3c26-41d5-b829-648207f84c25" />
 
-
+## Integrantes del proyecto
+- Fabio Pillajo
+- Martin Roca
+- David Guerra
+- Melanie Peñafiel
 
 
 
