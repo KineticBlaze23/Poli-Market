@@ -4,26 +4,22 @@
 
 ---
 
-## 🚀 Funcionalidades principales
+## Funcionalidades principales
 
-### 1. 📦 Gestión de productos
-- Registro de nuevos productos
-- Modificación y eliminación de productos existentes
-- Búsqueda rápida por código o nombre
+- Gestión de usuarios (Administrador y Empleado)
+- Autenticación con validación de roles
+- Gestión de clientes
+- Gestión de ventas
+- Generación de reportes
+- Interfaz intuitiva con Windows Forms
+- Arquitectura en capas (Entidad, Negocio, Presentación)
+- Manejo de archivos .txt para todos los modulos
+- Aplicación de Heurísticas de usabilidad de Nielsen
 
-### 2. 💰 Gestión de ventas
-- Registro de ventas detalladas (producto, cantidad, fecha)
-- Disminución automática del stock al vender
-- Cálculo automático del total por cada venta
-
-### 3. 📊 Reportes y estadísticas
-- Listado de productos con stock bajo
-- Cálculo del total de ingresos generados por ventas
-- Identificación de productos más vendidos
 
 ---
 
-## 🧑‍💻 Requisitos del sistema
+## Requisitos del sistema
 
 - .NET Framework 4.x o superior  
 - Visual Studio 2022 o superior  
@@ -31,5 +27,9 @@
 
 ---
 
-## 📁 Estructura del proyecto
+## Integrantes del proyecto
+- Fabio Pillajo
+- Martin Roca
+- David Guerra
+- Melanie Peñafiel
 
