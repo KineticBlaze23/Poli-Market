@@ -21,7 +21,7 @@
 
 ## Requisitos del sistema
 
-- .NET Framework 4.x o superior  
+- .NET Framework 4.2  
 - Visual Studio 2022 o superior  
 - Sistema operativo: Windows
 
@@ -47,8 +47,11 @@
 
 - Generación de reportes
 <img width="796" height="529" alt="image" src="https://github.com/user-attachments/assets/dea4d333-7cbe-4323-a0ae-774e3f7afa09" />
+
 <img width="302" height="276" alt="image" src="https://github.com/user-attachments/assets/e2bb4ce6-512d-4977-999f-366f6e835c37" />
+
 <img width="320" height="203" alt="image" src="https://github.com/user-attachments/assets/53eb31e4-6ba4-41b4-9aea-f7e4d45820f4" />
+
 <img width="290" height="228" alt="image" src="https://github.com/user-attachments/assets/9551a5e8-fc9c-4e59-a4a1-7251e79f1aa7" />
 
 - Acerca de 
