@@ -1,0 +1,22 @@
+IdProducto,Nombre,Precio,Stock
+1,Shampoo,4,66
+2,Toalla,6,192
+3,Enjuague Bucal,1,14
+4,Crema Corporal,5,240
+6,Loción,6,107
+7,Mascarilla Facial,5,169
+8,Esponja de Baño,1,203
+9,Alcohol en Gel,2,571
+10,Jabón de Manos,1,344
+11,Desodorante,3,6
+12,Protector Solar,7,78
+13,Shampoo Anticaspa,4,81
+14,Crema para Peinar,2,9
+15,Enjuague para Ropa,4,9
+16,Detergente en Polvo,3,495
+17,Suavizante de Telas,3,396
+18,Paquete de Servilletas,2,598
+19,Hisopos,1,994
+20,Toallitas Húmedas,3,306
+21,Crema para Afeitar,2,995
+22,Ambientador,3,115

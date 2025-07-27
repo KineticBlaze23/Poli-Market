@@ -1,0 +1,9 @@
+Martin|1234|Administrador
+Simon|4321|Administrador
+Fabio|1234|Administrador
+Melanie|1234|Administrador
+Ricardo|1234|Administrador
+Empleado1|1234|Empleado
+Pedro|1234|Administrador
+Andrea|1234|Empleado
+Messi|1234|Administrador

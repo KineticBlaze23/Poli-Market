@@ -1,0 +1,1023 @@
+﻿namespace CapaPresentacion
+{
+    partial class FormOpciones
+    {
+        /// <summary>
+        /// Variable del diseñador necesaria.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Limpiar los recursos que se estén usando.
+        /// </summary>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Código generado por el Diseñador de Windows Forms
+
+        /// <summary>
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabCliente = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtFiltrar = new System.Windows.Forms.TextBox();
+            this.lblBusquedaPor = new System.Windows.Forms.Label();
+            this.listCliente = new System.Windows.Forms.ListView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnEliminarCliente = new System.Windows.Forms.Button();
+            this.txtBDireccionCliente = new System.Windows.Forms.TextBox();
+            this.btnModificarCliente = new System.Windows.Forms.Button();
+            this.txtBCorreoElectronicoCliente = new System.Windows.Forms.TextBox();
+            this.txtBCedulaCliente = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblCorreoElectronico = new System.Windows.Forms.Label();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.btnAgregarCliente = new System.Windows.Forms.Button();
+            this.txtBApellidoCliente = new System.Windows.Forms.TextBox();
+            this.txtBNombreCliente = new System.Windows.Forms.TextBox();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.tabProducto = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtBuscarProducto = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.listProducto = new System.Windows.Forms.ListView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBStockProducto = new System.Windows.Forms.TextBox();
+            this.btnEliminarProducto = new System.Windows.Forms.Button();
+            this.btnModificarProducto = new System.Windows.Forms.Button();
+            this.lblStock = new System.Windows.Forms.Label();
+            this.btnAgregarProducto = new System.Windows.Forms.Button();
+            this.txtBPrecioProducto = new System.Windows.Forms.TextBox();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tabVenta = new System.Windows.Forms.TabPage();
+            this.groupBoxCarritoDeCompras = new System.Windows.Forms.GroupBox();
+            this.btnCancelarCompra = new System.Windows.Forms.Button();
+            this.btnQuitarCarrito = new System.Windows.Forms.Button();
+            this.btnFinalizarCompra = new System.Windows.Forms.Button();
+            this.listBoxCarrito = new System.Windows.Forms.ListBox();
+            this.lblTotalCarrito = new System.Windows.Forms.Label();
+            this.groupBoxClienteVenta = new System.Windows.Forms.GroupBox();
+            this.lblCedulaClienteVenta = new System.Windows.Forms.Label();
+            this.txtCedulaClienteVenta = new System.Windows.Forms.TextBox();
+            this.btnValidarCliente = new System.Windows.Forms.Button();
+            this.lblDatodClienteVenta = new System.Windows.Forms.Label();
+            this.groupBoxProductoVenta = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblIDProductoVenta = new System.Windows.Forms.Label();
+            this.txtIDProductoVenta = new System.Windows.Forms.TextBox();
+            this.btnValidarProducto = new System.Windows.Forms.Button();
+            this.lblNombreProductoVenta = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCantidadVender = new System.Windows.Forms.TextBox();
+            this.btnAgregarCarrito = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tmrFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.menuStripOpciones = new System.Windows.Forms.MenuStrip();
+            this.menuItemSesion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemCerrarSesion = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemSalir = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemReportes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemReporteBajoStock = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemReporteMasVendido = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemReporteIngresosTotales = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemHistorialVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblFechaHora = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.tabControl1.SuspendLayout();
+            this.tabCliente.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tabProducto.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.tabVenta.SuspendLayout();
+            this.groupBoxCarritoDeCompras.SuspendLayout();
+            this.groupBoxClienteVenta.SuspendLayout();
+            this.groupBoxProductoVenta.SuspendLayout();
+            this.menuStripOpciones.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabCliente);
+            this.tabControl1.Controls.Add(this.tabProducto);
+            this.tabControl1.Controls.Add(this.tabVenta);
+            this.tabControl1.Location = new System.Drawing.Point(13, 246);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1042, 392);
+            this.tabControl1.TabIndex = 10;
+            // 
+            // tabCliente
+            // 
+            this.tabCliente.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabCliente.Controls.Add(this.groupBox4);
+            this.tabCliente.Controls.Add(this.groupBox2);
+            this.tabCliente.Location = new System.Drawing.Point(4, 25);
+            this.tabCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabCliente.Name = "tabCliente";
+            this.tabCliente.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabCliente.Size = new System.Drawing.Size(1034, 363);
+            this.tabCliente.TabIndex = 0;
+            this.tabCliente.Text = "Cliente";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.txtFiltrar);
+            this.groupBox4.Controls.Add(this.lblBusquedaPor);
+            this.groupBox4.Controls.Add(this.listCliente);
+            this.groupBox4.Location = new System.Drawing.Point(416, 16);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(601, 334);
+            this.groupBox4.TabIndex = 13;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Clientes";
+            // 
+            // txtFiltrar
+            // 
+            this.txtFiltrar.Location = new System.Drawing.Point(182, 27);
+            this.txtFiltrar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFiltrar.Name = "txtFiltrar";
+            this.txtFiltrar.Size = new System.Drawing.Size(179, 22);
+            this.txtFiltrar.TabIndex = 13;
+            // 
+            // lblBusquedaPor
+            // 
+            this.lblBusquedaPor.AutoSize = true;
+            this.lblBusquedaPor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblBusquedaPor.Location = new System.Drawing.Point(11, 28);
+            this.lblBusquedaPor.Name = "lblBusquedaPor";
+            this.lblBusquedaPor.Size = new System.Drawing.Size(156, 20);
+            this.lblBusquedaPor.TabIndex = 14;
+            this.lblBusquedaPor.Text = "Busqueda (Nombre):";
+            // 
+            // listCliente
+            // 
+            this.listCliente.FullRowSelect = true;
+            this.listCliente.HideSelection = false;
+            this.listCliente.Location = new System.Drawing.Point(7, 57);
+            this.listCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.listCliente.MultiSelect = false;
+            this.listCliente.Name = "listCliente";
+            this.listCliente.Size = new System.Drawing.Size(573, 265);
+            this.listCliente.TabIndex = 12;
+            this.listCliente.UseCompatibleStateImageBehavior = false;
+            this.listCliente.View = System.Windows.Forms.View.Details;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnEliminarCliente);
+            this.groupBox2.Controls.Add(this.txtBDireccionCliente);
+            this.groupBox2.Controls.Add(this.btnModificarCliente);
+            this.groupBox2.Controls.Add(this.txtBCorreoElectronicoCliente);
+            this.groupBox2.Controls.Add(this.txtBCedulaCliente);
+            this.groupBox2.Controls.Add(this.lblDireccion);
+            this.groupBox2.Controls.Add(this.lblCorreoElectronico);
+            this.groupBox2.Controls.Add(this.lblCedula);
+            this.groupBox2.Controls.Add(this.btnAgregarCliente);
+            this.groupBox2.Controls.Add(this.txtBApellidoCliente);
+            this.groupBox2.Controls.Add(this.txtBNombreCliente);
+            this.groupBox2.Controls.Add(this.lblApellido);
+            this.groupBox2.Controls.Add(this.lblNombre);
+            this.groupBox2.Location = new System.Drawing.Point(15, 16);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(382, 290);
+            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Datos del Cliente";
+            // 
+            // btnEliminarCliente
+            // 
+            this.btnEliminarCliente.AutoSize = true;
+            this.btnEliminarCliente.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnEliminarCliente.Location = new System.Drawing.Point(260, 250);
+            this.btnEliminarCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarCliente.Name = "btnEliminarCliente";
+            this.btnEliminarCliente.Size = new System.Drawing.Size(100, 34);
+            this.btnEliminarCliente.TabIndex = 18;
+            this.btnEliminarCliente.Text = "Eliminar";
+            this.btnEliminarCliente.UseVisualStyleBackColor = true;
+            this.btnEliminarCliente.Click += new System.EventHandler(this.btnEliminarCliente_Click);
+            // 
+            // txtBDireccionCliente
+            // 
+            this.txtBDireccionCliente.Location = new System.Drawing.Point(211, 129);
+            this.txtBDireccionCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBDireccionCliente.Name = "txtBDireccionCliente";
+            this.txtBDireccionCliente.Size = new System.Drawing.Size(149, 22);
+            this.txtBDireccionCliente.TabIndex = 24;
+            // 
+            // btnModificarCliente
+            // 
+            this.btnModificarCliente.AutoSize = true;
+            this.btnModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnModificarCliente.Location = new System.Drawing.Point(138, 250);
+            this.btnModificarCliente.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificarCliente.Name = "btnModificarCliente";
+            this.btnModificarCliente.Size = new System.Drawing.Size(105, 34);
+            this.btnModificarCliente.TabIndex = 16;
+            this.btnModificarCliente.Text = "Modificar";
+            this.btnModificarCliente.UseVisualStyleBackColor = true;
+            this.btnModificarCliente.Click += new System.EventHandler(this.btnModificarCliente_Click);
+            // 
+            // txtBCorreoElectronicoCliente
+            // 
+            this.txtBCorreoElectronicoCliente.Location = new System.Drawing.Point(211, 69);
+            this.txtBCorreoElectronicoCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBCorreoElectronicoCliente.Name = "txtBCorreoElectronicoCliente";
+            this.txtBCorreoElectronicoCliente.Size = new System.Drawing.Size(149, 22);
+            this.txtBCorreoElectronicoCliente.TabIndex = 23;
+            // 
+            // txtBCedulaCliente
+            // 
+            this.txtBCedulaCliente.Location = new System.Drawing.Point(16, 198);
+            this.txtBCedulaCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBCedulaCliente.Name = "txtBCedulaCliente";
+            this.txtBCedulaCliente.Size = new System.Drawing.Size(149, 22);
+            this.txtBCedulaCliente.TabIndex = 22;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblDireccion.Location = new System.Drawing.Point(211, 109);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(68, 19);
+            this.lblDireccion.TabIndex = 21;
+            this.lblDireccion.Text = "Direccion:";
+            // 
+            // lblCorreoElectronico
+            // 
+            this.lblCorreoElectronico.AutoSize = true;
+            this.lblCorreoElectronico.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblCorreoElectronico.Location = new System.Drawing.Point(211, 48);
+            this.lblCorreoElectronico.Name = "lblCorreoElectronico";
+            this.lblCorreoElectronico.Size = new System.Drawing.Size(124, 19);
+            this.lblCorreoElectronico.TabIndex = 20;
+            this.lblCorreoElectronico.Text = "Correo Electronico:";
+            // 
+            // lblCedula
+            // 
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblCedula.Location = new System.Drawing.Point(16, 178);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(54, 19);
+            this.lblCedula.TabIndex = 19;
+            this.lblCedula.Text = "Cedula:";
+            // 
+            // btnAgregarCliente
+            // 
+            this.btnAgregarCliente.AutoSize = true;
+            this.btnAgregarCliente.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAgregarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCliente.Location = new System.Drawing.Point(19, 250);
+            this.btnAgregarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarCliente.Name = "btnAgregarCliente";
+            this.btnAgregarCliente.Size = new System.Drawing.Size(95, 34);
+            this.btnAgregarCliente.TabIndex = 17;
+            this.btnAgregarCliente.Text = "Agregar";
+            this.btnAgregarCliente.UseVisualStyleBackColor = true;
+            this.btnAgregarCliente.Click += new System.EventHandler(this.btnAgregarCliente_Click);
+            // 
+            // txtBApellidoCliente
+            // 
+            this.txtBApellidoCliente.Location = new System.Drawing.Point(16, 129);
+            this.txtBApellidoCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBApellidoCliente.Name = "txtBApellidoCliente";
+            this.txtBApellidoCliente.Size = new System.Drawing.Size(149, 22);
+            this.txtBApellidoCliente.TabIndex = 15;
+            // 
+            // txtBNombreCliente
+            // 
+            this.txtBNombreCliente.Location = new System.Drawing.Point(16, 69);
+            this.txtBNombreCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBNombreCliente.Name = "txtBNombreCliente";
+            this.txtBNombreCliente.Size = new System.Drawing.Size(149, 22);
+            this.txtBNombreCliente.TabIndex = 14;
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblApellido.Location = new System.Drawing.Point(16, 109);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(61, 19);
+            this.lblApellido.TabIndex = 13;
+            this.lblApellido.Text = "Apellido:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblNombre.Location = new System.Drawing.Point(16, 48);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(62, 19);
+            this.lblNombre.TabIndex = 12;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // tabProducto
+            // 
+            this.tabProducto.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabProducto.Controls.Add(this.groupBox3);
+            this.tabProducto.Controls.Add(this.groupBox1);
+            this.tabProducto.Location = new System.Drawing.Point(4, 25);
+            this.tabProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabProducto.Name = "tabProducto";
+            this.tabProducto.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabProducto.Size = new System.Drawing.Size(1034, 363);
+            this.tabProducto.TabIndex = 1;
+            this.tabProducto.Text = "Producto";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtBuscarProducto);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.listProducto);
+            this.groupBox3.Location = new System.Drawing.Point(416, 16);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(601, 334);
+            this.groupBox3.TabIndex = 13;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Productos";
+            // 
+            // txtBuscarProducto
+            // 
+            this.txtBuscarProducto.Location = new System.Drawing.Point(182, 27);
+            this.txtBuscarProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBuscarProducto.Name = "txtBuscarProducto";
+            this.txtBuscarProducto.Size = new System.Drawing.Size(179, 22);
+            this.txtBuscarProducto.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(11, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(156, 20);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Busqueda (Nombre):";
+            // 
+            // listProducto
+            // 
+            this.listProducto.HideSelection = false;
+            this.listProducto.Location = new System.Drawing.Point(7, 57);
+            this.listProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.listProducto.Name = "listProducto";
+            this.listProducto.Size = new System.Drawing.Size(573, 265);
+            this.listProducto.TabIndex = 12;
+            this.listProducto.UseCompatibleStateImageBehavior = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtBStockProducto);
+            this.groupBox1.Controls.Add(this.btnEliminarProducto);
+            this.groupBox1.Controls.Add(this.btnModificarProducto);
+            this.groupBox1.Controls.Add(this.lblStock);
+            this.groupBox1.Controls.Add(this.btnAgregarProducto);
+            this.groupBox1.Controls.Add(this.txtBPrecioProducto);
+            this.groupBox1.Controls.Add(this.txtNombreProducto);
+            this.groupBox1.Controls.Add(this.lblPrecio);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Location = new System.Drawing.Point(15, 16);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(382, 290);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos del Producto";
+            // 
+            // txtBStockProducto
+            // 
+            this.txtBStockProducto.Location = new System.Drawing.Point(16, 198);
+            this.txtBStockProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBStockProducto.Name = "txtBStockProducto";
+            this.txtBStockProducto.Size = new System.Drawing.Size(180, 22);
+            this.txtBStockProducto.TabIndex = 20;
+            // 
+            // btnEliminarProducto
+            // 
+            this.btnEliminarProducto.AutoSize = true;
+            this.btnEliminarProducto.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnEliminarProducto.Location = new System.Drawing.Point(260, 250);
+            this.btnEliminarProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarProducto.Name = "btnEliminarProducto";
+            this.btnEliminarProducto.Size = new System.Drawing.Size(100, 34);
+            this.btnEliminarProducto.TabIndex = 18;
+            this.btnEliminarProducto.Text = "Eliminar";
+            this.btnEliminarProducto.UseVisualStyleBackColor = false;
+            this.btnEliminarProducto.Click += new System.EventHandler(this.btnEliminarProducto_Click_1);
+            // 
+            // btnModificarProducto
+            // 
+            this.btnModificarProducto.AutoSize = true;
+            this.btnModificarProducto.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnModificarProducto.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnModificarProducto.Location = new System.Drawing.Point(138, 250);
+            this.btnModificarProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.btnModificarProducto.Name = "btnModificarProducto";
+            this.btnModificarProducto.Size = new System.Drawing.Size(105, 34);
+            this.btnModificarProducto.TabIndex = 16;
+            this.btnModificarProducto.Text = "Modificar";
+            this.btnModificarProducto.UseVisualStyleBackColor = true;
+            this.btnModificarProducto.Click += new System.EventHandler(this.btnModificarProducto_Click_1);
+            // 
+            // lblStock
+            // 
+            this.lblStock.AutoSize = true;
+            this.lblStock.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblStock.Location = new System.Drawing.Point(16, 177);
+            this.lblStock.Name = "lblStock";
+            this.lblStock.Size = new System.Drawing.Size(45, 19);
+            this.lblStock.TabIndex = 19;
+            this.lblStock.Text = "Stock:";
+            // 
+            // btnAgregarProducto
+            // 
+            this.btnAgregarProducto.AutoSize = true;
+            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAgregarProducto.Location = new System.Drawing.Point(19, 250);
+            this.btnAgregarProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(95, 34);
+            this.btnAgregarProducto.TabIndex = 17;
+            this.btnAgregarProducto.Text = "Agregar";
+            this.btnAgregarProducto.UseVisualStyleBackColor = true;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarProducto_Click_1);
+            // 
+            // txtBPrecioProducto
+            // 
+            this.txtBPrecioProducto.Location = new System.Drawing.Point(16, 134);
+            this.txtBPrecioProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBPrecioProducto.Name = "txtBPrecioProducto";
+            this.txtBPrecioProducto.Size = new System.Drawing.Size(180, 22);
+            this.txtBPrecioProducto.TabIndex = 15;
+            // 
+            // txtNombreProducto
+            // 
+            this.txtNombreProducto.Location = new System.Drawing.Point(16, 71);
+            this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(180, 22);
+            this.txtNombreProducto.TabIndex = 14;
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblPrecio.Location = new System.Drawing.Point(16, 111);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(49, 19);
+            this.lblPrecio.TabIndex = 13;
+            this.lblPrecio.Text = "Precio:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.label4.Location = new System.Drawing.Point(16, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 19);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Nombre:";
+            // 
+            // tabVenta
+            // 
+            this.tabVenta.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabVenta.Controls.Add(this.groupBoxCarritoDeCompras);
+            this.tabVenta.Controls.Add(this.groupBoxClienteVenta);
+            this.tabVenta.Controls.Add(this.groupBoxProductoVenta);
+            this.tabVenta.Location = new System.Drawing.Point(4, 25);
+            this.tabVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabVenta.Name = "tabVenta";
+            this.tabVenta.Size = new System.Drawing.Size(1034, 363);
+            this.tabVenta.TabIndex = 2;
+            this.tabVenta.Text = "Venta";
+            // 
+            // groupBoxCarritoDeCompras
+            // 
+            this.groupBoxCarritoDeCompras.Controls.Add(this.btnCancelarCompra);
+            this.groupBoxCarritoDeCompras.Controls.Add(this.btnQuitarCarrito);
+            this.groupBoxCarritoDeCompras.Controls.Add(this.btnFinalizarCompra);
+            this.groupBoxCarritoDeCompras.Controls.Add(this.listBoxCarrito);
+            this.groupBoxCarritoDeCompras.Controls.Add(this.lblTotalCarrito);
+            this.groupBoxCarritoDeCompras.Location = new System.Drawing.Point(558, 16);
+            this.groupBoxCarritoDeCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxCarritoDeCompras.Name = "groupBoxCarritoDeCompras";
+            this.groupBoxCarritoDeCompras.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxCarritoDeCompras.Size = new System.Drawing.Size(455, 339);
+            this.groupBoxCarritoDeCompras.TabIndex = 37;
+            this.groupBoxCarritoDeCompras.TabStop = false;
+            this.groupBoxCarritoDeCompras.Text = "Carrito de Compras";
+            // 
+            // btnCancelarCompra
+            // 
+            this.btnCancelarCompra.AutoSize = true;
+            this.btnCancelarCompra.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCancelarCompra.Location = new System.Drawing.Point(158, 298);
+            this.btnCancelarCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelarCompra.Name = "btnCancelarCompra";
+            this.btnCancelarCompra.Size = new System.Drawing.Size(126, 34);
+            this.btnCancelarCompra.TabIndex = 38;
+            this.btnCancelarCompra.Text = "Cancelar Compra";
+            this.btnCancelarCompra.UseVisualStyleBackColor = true;
+            this.btnCancelarCompra.Click += new System.EventHandler(this.btnCancelarCompra_Click_1);
+            // 
+            // btnQuitarCarrito
+            // 
+            this.btnQuitarCarrito.AutoSize = true;
+            this.btnQuitarCarrito.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnQuitarCarrito.Location = new System.Drawing.Point(12, 298);
+            this.btnQuitarCarrito.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQuitarCarrito.Name = "btnQuitarCarrito";
+            this.btnQuitarCarrito.Size = new System.Drawing.Size(113, 34);
+            this.btnQuitarCarrito.TabIndex = 36;
+            this.btnQuitarCarrito.Text = "Quitar Producto";
+            this.btnQuitarCarrito.UseVisualStyleBackColor = true;
+            this.btnQuitarCarrito.Click += new System.EventHandler(this.btnQuitarCarrito_Click_1);
+            // 
+            // btnFinalizarCompra
+            // 
+            this.btnFinalizarCompra.AutoSize = true;
+            this.btnFinalizarCompra.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnFinalizarCompra.Location = new System.Drawing.Point(315, 299);
+            this.btnFinalizarCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFinalizarCompra.Name = "btnFinalizarCompra";
+            this.btnFinalizarCompra.Size = new System.Drawing.Size(122, 34);
+            this.btnFinalizarCompra.TabIndex = 35;
+            this.btnFinalizarCompra.Text = "Finalizar Compra";
+            this.btnFinalizarCompra.UseVisualStyleBackColor = true;
+            this.btnFinalizarCompra.Click += new System.EventHandler(this.btnFinalizarCompra_Click_1);
+            // 
+            // listBoxCarrito
+            // 
+            this.listBoxCarrito.FormattingEnabled = true;
+            this.listBoxCarrito.HorizontalScrollbar = true;
+            this.listBoxCarrito.ItemHeight = 16;
+            this.listBoxCarrito.Location = new System.Drawing.Point(6, 19);
+            this.listBoxCarrito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.listBoxCarrito.Name = "listBoxCarrito";
+            this.listBoxCarrito.Size = new System.Drawing.Size(443, 244);
+            this.listBoxCarrito.TabIndex = 34;
+            // 
+            // lblTotalCarrito
+            // 
+            this.lblTotalCarrito.AutoSize = true;
+            this.lblTotalCarrito.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblTotalCarrito.Location = new System.Drawing.Point(8, 265);
+            this.lblTotalCarrito.Name = "lblTotalCarrito";
+            this.lblTotalCarrito.Size = new System.Drawing.Size(214, 23);
+            this.lblTotalCarrito.TabIndex = 37;
+            this.lblTotalCarrito.Text = "Total de la compra: $0.00";
+            // 
+            // groupBoxClienteVenta
+            // 
+            this.groupBoxClienteVenta.Controls.Add(this.lblCedulaClienteVenta);
+            this.groupBoxClienteVenta.Controls.Add(this.txtCedulaClienteVenta);
+            this.groupBoxClienteVenta.Controls.Add(this.btnValidarCliente);
+            this.groupBoxClienteVenta.Controls.Add(this.lblDatodClienteVenta);
+            this.groupBoxClienteVenta.Location = new System.Drawing.Point(15, 16);
+            this.groupBoxClienteVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxClienteVenta.Name = "groupBoxClienteVenta";
+            this.groupBoxClienteVenta.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxClienteVenta.Size = new System.Drawing.Size(240, 288);
+            this.groupBoxClienteVenta.TabIndex = 35;
+            this.groupBoxClienteVenta.TabStop = false;
+            this.groupBoxClienteVenta.Text = "Datos del Cliente";
+            // 
+            // lblCedulaClienteVenta
+            // 
+            this.lblCedulaClienteVenta.Location = new System.Drawing.Point(6, 34);
+            this.lblCedulaClienteVenta.Name = "lblCedulaClienteVenta";
+            this.lblCedulaClienteVenta.Size = new System.Drawing.Size(100, 23);
+            this.lblCedulaClienteVenta.TabIndex = 0;
+            this.lblCedulaClienteVenta.Text = "Cedula:";
+            // 
+            // txtCedulaClienteVenta
+            // 
+            this.txtCedulaClienteVenta.Location = new System.Drawing.Point(6, 55);
+            this.txtCedulaClienteVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCedulaClienteVenta.Name = "txtCedulaClienteVenta";
+            this.txtCedulaClienteVenta.Size = new System.Drawing.Size(100, 22);
+            this.txtCedulaClienteVenta.TabIndex = 1;
+            // 
+            // btnValidarCliente
+            // 
+            this.btnValidarCliente.AutoSize = true;
+            this.btnValidarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnValidarCliente.Location = new System.Drawing.Point(115, 52);
+            this.btnValidarCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnValidarCliente.Name = "btnValidarCliente";
+            this.btnValidarCliente.Size = new System.Drawing.Size(79, 26);
+            this.btnValidarCliente.TabIndex = 2;
+            this.btnValidarCliente.Text = "Buscar";
+            this.btnValidarCliente.Click += new System.EventHandler(this.btnValidarCliente_Click_1);
+            // 
+            // lblDatodClienteVenta
+            // 
+            this.lblDatodClienteVenta.Location = new System.Drawing.Point(6, 104);
+            this.lblDatodClienteVenta.Name = "lblDatodClienteVenta";
+            this.lblDatodClienteVenta.Size = new System.Drawing.Size(224, 103);
+            this.lblDatodClienteVenta.TabIndex = 3;
+            // 
+            // groupBoxProductoVenta
+            // 
+            this.groupBoxProductoVenta.Controls.Add(this.label7);
+            this.groupBoxProductoVenta.Controls.Add(this.lblIDProductoVenta);
+            this.groupBoxProductoVenta.Controls.Add(this.txtIDProductoVenta);
+            this.groupBoxProductoVenta.Controls.Add(this.btnValidarProducto);
+            this.groupBoxProductoVenta.Controls.Add(this.lblNombreProductoVenta);
+            this.groupBoxProductoVenta.Controls.Add(this.label10);
+            this.groupBoxProductoVenta.Controls.Add(this.txtCantidadVender);
+            this.groupBoxProductoVenta.Controls.Add(this.btnAgregarCarrito);
+            this.groupBoxProductoVenta.Location = new System.Drawing.Point(289, 16);
+            this.groupBoxProductoVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxProductoVenta.Name = "groupBoxProductoVenta";
+            this.groupBoxProductoVenta.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxProductoVenta.Size = new System.Drawing.Size(240, 288);
+            this.groupBoxProductoVenta.TabIndex = 36;
+            this.groupBoxProductoVenta.TabStop = false;
+            this.groupBoxProductoVenta.Text = "Datos del Producto";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.label7.Location = new System.Drawing.Point(10, 223);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(136, 19);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Cantidad a Comprar:";
+            // 
+            // lblIDProductoVenta
+            // 
+            this.lblIDProductoVenta.Location = new System.Drawing.Point(11, 34);
+            this.lblIDProductoVenta.Name = "lblIDProductoVenta";
+            this.lblIDProductoVenta.Size = new System.Drawing.Size(100, 23);
+            this.lblIDProductoVenta.TabIndex = 0;
+            this.lblIDProductoVenta.Text = "ID:";
+            // 
+            // txtIDProductoVenta
+            // 
+            this.txtIDProductoVenta.Location = new System.Drawing.Point(11, 55);
+            this.txtIDProductoVenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtIDProductoVenta.Name = "txtIDProductoVenta";
+            this.txtIDProductoVenta.Size = new System.Drawing.Size(100, 22);
+            this.txtIDProductoVenta.TabIndex = 1;
+            // 
+            // btnValidarProducto
+            // 
+            this.btnValidarProducto.AutoSize = true;
+            this.btnValidarProducto.Location = new System.Drawing.Point(120, 52);
+            this.btnValidarProducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnValidarProducto.Name = "btnValidarProducto";
+            this.btnValidarProducto.Size = new System.Drawing.Size(79, 26);
+            this.btnValidarProducto.TabIndex = 2;
+            this.btnValidarProducto.Text = "Buscar";
+            this.btnValidarProducto.Click += new System.EventHandler(this.btnValidarProducto_Click_1);
+            // 
+            // lblNombreProductoVenta
+            // 
+            this.lblNombreProductoVenta.Location = new System.Drawing.Point(6, 104);
+            this.lblNombreProductoVenta.Name = "lblNombreProductoVenta";
+            this.lblNombreProductoVenta.Size = new System.Drawing.Size(224, 103);
+            this.lblNombreProductoVenta.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(11, 130);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 23);
+            this.label10.TabIndex = 4;
+            // 
+            // txtCantidadVender
+            // 
+            this.txtCantidadVender.Location = new System.Drawing.Point(8, 245);
+            this.txtCantidadVender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCantidadVender.Name = "txtCantidadVender";
+            this.txtCantidadVender.Size = new System.Drawing.Size(100, 22);
+            this.txtCantidadVender.TabIndex = 5;
+            // 
+            // btnAgregarCarrito
+            // 
+            this.btnAgregarCarrito.AutoSize = true;
+            this.btnAgregarCarrito.Location = new System.Drawing.Point(117, 244);
+            this.btnAgregarCarrito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAgregarCarrito.Name = "btnAgregarCarrito";
+            this.btnAgregarCarrito.Size = new System.Drawing.Size(91, 26);
+            this.btnAgregarCarrito.TabIndex = 6;
+            this.btnAgregarCarrito.Text = "Agregar";
+            this.btnAgregarCarrito.Click += new System.EventHandler(this.btnAgregarCarrito_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(100, 23);
+            this.label8.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 0;
+            // 
+            // tmrFechaHora
+            // 
+            this.tmrFechaHora.Enabled = true;
+            this.tmrFechaHora.Tick += new System.EventHandler(this.tmrFechaHora_Tick);
+            // 
+            // menuStripOpciones
+            // 
+            this.menuStripOpciones.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.menuStripOpciones.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStripOpciones.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.menuStripOpciones.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.menuStripOpciones.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStripOpciones.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemSesion,
+            this.menuItemReportes,
+            this.menuItemHistorialVentas,
+            this.menuItemAcercaDe});
+            this.menuStripOpciones.Location = new System.Drawing.Point(-1, 190);
+            this.menuStripOpciones.Name = "menuStripOpciones";
+            this.menuStripOpciones.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStripOpciones.Size = new System.Drawing.Size(412, 28);
+            this.menuStripOpciones.TabIndex = 100;
+            this.menuStripOpciones.Text = "menuStripOpciones";
+            // 
+            // menuItemSesion
+            // 
+            this.menuItemSesion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemCerrarSesion,
+            this.menuItemSalir});
+            this.menuItemSesion.Name = "menuItemSesion";
+            this.menuItemSesion.Size = new System.Drawing.Size(68, 24);
+            this.menuItemSesion.Text = "Sesión";
+            // 
+            // menuItemCerrarSesion
+            // 
+            this.menuItemCerrarSesion.Name = "menuItemCerrarSesion";
+            this.menuItemCerrarSesion.Size = new System.Drawing.Size(184, 26);
+            this.menuItemCerrarSesion.Text = "Cerrar Sesión";
+            this.menuItemCerrarSesion.Click += new System.EventHandler(this.menuItemCerrarSesion_Click);
+            // 
+            // menuItemSalir
+            // 
+            this.menuItemSalir.Name = "menuItemSalir";
+            this.menuItemSalir.Size = new System.Drawing.Size(184, 26);
+            this.menuItemSalir.Text = "Salir";
+            this.menuItemSalir.Click += new System.EventHandler(this.menuItemSalir_Click);
+            // 
+            // menuItemReportes
+            // 
+            this.menuItemReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemReporteBajoStock,
+            this.menuItemReporteMasVendido,
+            this.menuItemReporteIngresosTotales});
+            this.menuItemReportes.Name = "menuItemReportes";
+            this.menuItemReportes.Size = new System.Drawing.Size(86, 24);
+            this.menuItemReportes.Text = "Reportes";
+            // 
+            // menuItemReporteBajoStock
+            // 
+            this.menuItemReporteBajoStock.Name = "menuItemReporteBajoStock";
+            this.menuItemReporteBajoStock.Size = new System.Drawing.Size(269, 26);
+            this.menuItemReporteBajoStock.Text = "Productos con Bajo Stock";
+            this.menuItemReporteBajoStock.Click += new System.EventHandler(this.menuItemReporteBajoStock_Click);
+            // 
+            // menuItemReporteMasVendido
+            // 
+            this.menuItemReporteMasVendido.Name = "menuItemReporteMasVendido";
+            this.menuItemReporteMasVendido.Size = new System.Drawing.Size(269, 26);
+            this.menuItemReporteMasVendido.Text = "Producto Más Vendido";
+            this.menuItemReporteMasVendido.Click += new System.EventHandler(this.menuItemReporteMasVendido_Click);
+            // 
+            // menuItemReporteIngresosTotales
+            // 
+            this.menuItemReporteIngresosTotales.Name = "menuItemReporteIngresosTotales";
+            this.menuItemReporteIngresosTotales.Size = new System.Drawing.Size(269, 26);
+            this.menuItemReporteIngresosTotales.Text = "Total de Ingresos";
+            this.menuItemReporteIngresosTotales.Click += new System.EventHandler(this.menuItemReporteIngresosTotales_Click);
+            // 
+            // menuItemHistorialVentas
+            // 
+            this.menuItemHistorialVentas.Name = "menuItemHistorialVentas";
+            this.menuItemHistorialVentas.Size = new System.Drawing.Size(154, 24);
+            this.menuItemHistorialVentas.Text = "Historial de Ventas";
+            this.menuItemHistorialVentas.Click += new System.EventHandler(this.menuItemHistorialVentas_Click);
+            // 
+            // menuItemAcercaDe
+            // 
+            this.menuItemAcercaDe.Name = "menuItemAcercaDe";
+            this.menuItemAcercaDe.Size = new System.Drawing.Size(91, 24);
+            this.menuItemAcercaDe.Text = "Acerca de";
+            this.menuItemAcercaDe.Click += new System.EventHandler(this.menuItemAcercaDe_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::CapaPresentacion.Properties.Resources.ColorAzul;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.lblFechaHora);
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.lblBienvenido);
+            this.panel5.Location = new System.Drawing.Point(-1, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1109, 187);
+            this.panel5.TabIndex = 12;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // lblFechaHora
+            // 
+            this.lblFechaHora.AutoSize = true;
+            this.lblFechaHora.BackColor = System.Drawing.Color.Transparent;
+            this.lblFechaHora.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.lblFechaHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFechaHora.Location = new System.Drawing.Point(766, 140);
+            this.lblFechaHora.Name = "lblFechaHora";
+            this.lblFechaHora.Size = new System.Drawing.Size(55, 23);
+            this.lblFechaHora.TabIndex = 14;
+            this.lblFechaHora.Text = "label6";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.Logo5;
+            this.pictureBox1.InitialImage = global::CapaPresentacion.Properties.Resources.Logo2_50_;
+            this.pictureBox1.Location = new System.Drawing.Point(750, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 116);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(11, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(283, 57);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Bienvenido";
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.BackColor = System.Drawing.Color.Transparent;
+            this.lblBienvenido.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
+            this.lblBienvenido.ForeColor = System.Drawing.Color.Transparent;
+            this.lblBienvenido.Location = new System.Drawing.Point(16, 119);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(599, 54);
+            this.lblBienvenido.TabIndex = 11;
+            // 
+            // FormOpciones
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1062, 651);
+            this.Controls.Add(this.menuStripOpciones);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.tabControl1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "FormOpciones";
+            this.ShowIcon = false;
+            this.Text = "Opciones";
+            this.Load += new System.EventHandler(this.FormOpciones_Load);
+            this.tabControl1.ResumeLayout(false);
+            this.tabCliente.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.tabProducto.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tabVenta.ResumeLayout(false);
+            this.groupBoxCarritoDeCompras.ResumeLayout(false);
+            this.groupBoxCarritoDeCompras.PerformLayout();
+            this.groupBoxClienteVenta.ResumeLayout(false);
+            this.groupBoxClienteVenta.PerformLayout();
+            this.groupBoxProductoVenta.ResumeLayout(false);
+            this.groupBoxProductoVenta.PerformLayout();
+            this.menuStripOpciones.ResumeLayout(false);
+            this.menuStripOpciones.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabCliente;
+        private System.Windows.Forms.TabPage tabProducto;
+        private System.Windows.Forms.TabPage tabVenta;
+        private System.Windows.Forms.Label lblBienvenido;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblFechaHora;
+        private System.Windows.Forms.Timer tmrFechaHora;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MenuStrip menuStripOpciones;
+        private System.Windows.Forms.ToolStripMenuItem menuItemSesion;
+        private System.Windows.Forms.ToolStripMenuItem menuItemCerrarSesion;
+        private System.Windows.Forms.ToolStripMenuItem menuItemSalir;
+        private System.Windows.Forms.ToolStripMenuItem menuItemReportes;
+        private System.Windows.Forms.ToolStripMenuItem menuItemReporteBajoStock;
+        private System.Windows.Forms.ToolStripMenuItem menuItemReporteMasVendido;
+        private System.Windows.Forms.ToolStripMenuItem menuItemReporteIngresosTotales;
+        private System.Windows.Forms.ToolStripMenuItem menuItemHistorialVentas;
+        private System.Windows.Forms.ToolStripMenuItem menuItemAcercaDe;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnEliminarCliente;
+        private System.Windows.Forms.TextBox txtBDireccionCliente;
+        private System.Windows.Forms.Button btnModificarCliente;
+        private System.Windows.Forms.TextBox txtBCorreoElectronicoCliente;
+        private System.Windows.Forms.TextBox txtBCedulaCliente;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.Label lblCorreoElectronico;
+        private System.Windows.Forms.Label lblCedula;
+        private System.Windows.Forms.Button btnAgregarCliente;
+        private System.Windows.Forms.TextBox txtBApellidoCliente;
+        private System.Windows.Forms.TextBox txtBNombreCliente;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtBStockProducto;
+        private System.Windows.Forms.Button btnEliminarProducto;
+        private System.Windows.Forms.Button btnModificarProducto;
+        private System.Windows.Forms.Label lblStock;
+        private System.Windows.Forms.Button btnAgregarProducto;
+        private System.Windows.Forms.TextBox txtBPrecioProducto;
+        private System.Windows.Forms.TextBox txtNombreProducto;
+        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtBuscarProducto;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListView listProducto;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox txtFiltrar;
+        private System.Windows.Forms.Label lblBusquedaPor;
+        private System.Windows.Forms.ListView listCliente;
+        private System.Windows.Forms.GroupBox groupBoxCarritoDeCompras;
+        private System.Windows.Forms.Button btnCancelarCompra;
+        private System.Windows.Forms.Button btnQuitarCarrito;
+        private System.Windows.Forms.Button btnFinalizarCompra;
+        private System.Windows.Forms.ListBox listBoxCarrito;
+        private System.Windows.Forms.Label lblTotalCarrito;
+        private System.Windows.Forms.GroupBox groupBoxClienteVenta;
+        private System.Windows.Forms.Label lblCedulaClienteVenta;
+        private System.Windows.Forms.TextBox txtCedulaClienteVenta;
+        private System.Windows.Forms.Button btnValidarCliente;
+        private System.Windows.Forms.Label lblDatodClienteVenta;
+        private System.Windows.Forms.GroupBox groupBoxProductoVenta;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblIDProductoVenta;
+        private System.Windows.Forms.TextBox txtIDProductoVenta;
+        private System.Windows.Forms.Button btnValidarProducto;
+        private System.Windows.Forms.Label lblNombreProductoVenta;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCantidadVender;
+        private System.Windows.Forms.Button btnAgregarCarrito;
+    }
+}
+

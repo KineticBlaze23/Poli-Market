@@ -1,0 +1,873 @@
+﻿using System;
+using System.IO;
+using System.Windows.Forms;
+using CapaEntidad;
+using CapaNegocio;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CapaPresentacion
+{
+    public partial class FormOpciones : Form
+    {
+        private string rolUsuario;
+        private string nombreUsuario; // Variable privada para el usuario
+        private NegocioCliente negocioCliente = new NegocioCliente();
+        private NegocioProducto negocioProducto = new NegocioProducto();
+        private Producto productoValidado = null; // Para guardar el producto validado
+        private NegocioVenta negocioVenta = new NegocioVenta();
+
+        // Rutas relativas para los archivos txt (ubicados en la carpeta del ejecutable)
+        private static readonly string RutaBaseArchivos = AppDomain.CurrentDomain.BaseDirectory;
+        private string rutaArchivoCliente = Path.Combine(RutaBaseArchivos, "RegistroCliente.txt");
+        private string rutaArchivoProducto = Path.Combine(RutaBaseArchivos, "RegistroProducto.txt");
+        private string rutaArchivoVenta = Path.Combine(RutaBaseArchivos, "RegistroVenta.txt");
+
+        // Variable para controlar si se debe cerrar toda la aplicación
+        private bool cerrarAplicacion = true;
+
+        private void VerificarYCrearArchivosTxt()
+        {
+            try
+            {
+                if (!File.Exists(rutaArchivoCliente))
+                    File.WriteAllText(rutaArchivoCliente, "IdCliente,Nombre,Apellido,Cedula,CorreoElectronico,Direccion\r\n");
+                if (!File.Exists(rutaArchivoProducto))
+                    File.WriteAllText(rutaArchivoProducto, "IdProducto,Nombre,Precio,Stock\r\n");
+                if (!File.Exists(rutaArchivoVenta))
+                    File.WriteAllText(rutaArchivoVenta, "IdVenta,IdCliente,IdProducto,Cantidad,PrecioUnitario,Total,Fecha\r\n");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error creando archivos de datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void InicializarEventos() 
+        {
+            // Eventos para Enter en campos de venta
+            this.txtCedulaClienteVenta.KeyDown += (s, e) => {
+                if (e.KeyCode == Keys.Enter) {
+                    btnValidarCliente.PerformClick();
+                    e.Handled = true;
+                    e.SuppressKeyPress = true;
+                }
+            };
+            this.txtIDProductoVenta.KeyDown += (s, e) => {
+                if (e.KeyCode == Keys.Enter) {
+                    btnValidarProducto.PerformClick();
+                    e.Handled = true;
+                    e.SuppressKeyPress = true;
+                }
+            };
+            this.txtCantidadVender.KeyDown += (s, e) => {
+                if (e.KeyCode == Keys.Enter) {
+                    btnAgregarCarrito.PerformClick();
+                    e.Handled = true;
+                    e.SuppressKeyPress = true;
+                }
+            };
+        }
+
+        public FormOpciones(string rol, string usuario) 
+        {
+            InitializeComponent();
+
+            this.StartPosition = FormStartPosition.CenterScreen;
+            rolUsuario = rol;
+            nombreUsuario = usuario;
+            VerificarYCrearArchivosTxt();
+            ConfigurarAccesoPorRol();
+
+            // Llenar el label con la información del usuario y rol
+            lblBienvenido.Text = $"{nombreUsuario} | Rol: {rolUsuario}";
+            CargarClientes();
+            CargarProductos();
+            FormClosing += FormOpciones_FormClosing;
+            InicializarEventos();
+        }
+
+        public FormOpciones()
+        {
+            InitializeComponent();
+            VerificarYCrearArchivosTxt();
+            CargarClientes();
+            CargarProductos();
+            FormClosing += FormOpciones_FormClosing;
+            InicializarEventos();
+        }
+
+        private void ConfigurarAccesoPorRol() // Método para configurar los paneles según el rol del usuario
+        {
+            tabCliente.Enabled = true;
+            tabVenta.Enabled = true;
+            tabProducto.Enabled = rolUsuario == "Administrador";
+            // Solo el administrador puede acceder al historial de ventas
+            menuItemHistorialVentas.Enabled = rolUsuario == "Administrador";
+            // Solo el administrador puede acceder a los reportes
+            menuItemReportes.Enabled = rolUsuario == "Administrador";
+        }
+
+        private void CargarClientes()
+        {
+            negocioCliente.CargarClientesDesdeTxt(rutaArchivoCliente);
+            ActualizarListaClientes();
+        }
+
+        private void GuardarClientes()
+        {
+            negocioCliente.GuardarClientesEnTxt(rutaArchivoCliente);
+        }
+
+        private void ActualizarListaClientes()
+        {
+            listCliente.Items.Clear();
+            foreach (var cliente in negocioCliente.ListarClientes())
+            {
+                var item = new ListViewItem(cliente.IdCliente.ToString());
+                item.SubItems.Add(cliente.Nombre);
+                item.SubItems.Add(cliente.Apellido);
+                item.SubItems.Add(cliente.Cedula);
+                item.SubItems.Add(cliente.CorreoElectronico);
+                item.SubItems.Add(cliente.Direccion);
+                listCliente.Items.Add(item);
+            }
+            listCliente.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        private void CargarProductos()
+        {
+            negocioProducto.CargarProductosDesdeTxt(rutaArchivoProducto);
+            ActualizarListaProductos();
+        }
+
+        private void GuardarProductos()
+        {
+            negocioProducto.GuardarProductosEnTxt(rutaArchivoProducto);
+        }
+
+        private void ActualizarListaProductos()
+        {
+            listProducto.Items.Clear();
+            foreach (var producto in negocioProducto.ListarProductos())
+            {
+                var item = new ListViewItem(producto.IdProducto.ToString());
+                item.SubItems.Add(producto.Nombre);
+                item.SubItems.Add(producto.Precio.ToString("F2"));
+                item.SubItems.Add(producto.Stock.ToString());
+                listProducto.Items.Add(item);
+            }
+            listProducto.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormOpciones_Load(object sender, EventArgs e)
+        {
+            listCliente.View = View.Details;
+            listCliente.Columns.Clear();
+            listCliente.Columns.Add("ID", 50);
+            listCliente.Columns.Add("Nombre", 100);
+            listCliente.Columns.Add("Apellido", 100);
+            listCliente.Columns.Add("Cédula", 100);
+            listCliente.Columns.Add("Correo", 150);
+            listCliente.Columns.Add("Dirección", 150);
+            listCliente.FullRowSelect = true;
+            listCliente.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+
+            listProducto.View = View.Details;
+            listProducto.Columns.Clear();
+            listProducto.Columns.Add("ID", 50);
+            listProducto.Columns.Add("Nombre", 120);
+            listProducto.Columns.Add("Precio", 80);
+            listProducto.Columns.Add("Stock", 80);
+            listProducto.FullRowSelect = true;
+            listProducto.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+
+            CargarClientes();
+            CargarProductos();
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            // Asegura que los manejadores de eventos estén asignados para el cambio de selección
+            listCliente.SelectedIndexChanged += listCliente_SelectedIndexChanged;
+            listProducto.SelectedIndexChanged += listProducto_SelectedIndexChanged;
+        }
+
+        private void btnRegresarLogin_Click(object sender, EventArgs e)
+        {
+            cerrarAplicacion = false;
+            this.Hide();
+            using (FormLogin formLogin = new FormLogin())
+            {
+                formLogin.ShowDialog();
+            }
+            this.Close();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!ValidarCampos())
+                    return;
+
+                negocioCliente.RegistrarCliente(
+                    txtBNombreCliente.Text.Trim(),
+                    txtBApellidoCliente.Text.Trim(),
+                    txtBCedulaCliente.Text.Trim(),
+                    txtBCorreoElectronicoCliente.Text.Trim(),
+                    txtBDireccionCliente.Text.Trim()
+                );
+                GuardarClientes();
+                ActualizarListaClientes();
+                LimpiarCampos();
+                MessageBox.Show("Cliente agregado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al agregar cliente: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LimpiarCampos()
+        {
+            txtBNombreCliente.Clear();
+            txtBApellidoCliente.Clear();
+            txtBCedulaCliente.Clear();
+            txtBCorreoElectronicoCliente.Clear();
+            txtBDireccionCliente.Clear();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (listCliente.SelectedItems.Count == 0)
+                return;
+
+            if (!ValidarCampos())
+                return;
+
+            int id = int.Parse(listCliente.SelectedItems[0].SubItems[0].Text);
+
+            var cliente = negocioCliente.BuscarPorId(id);
+            if (cliente != null)
+            {
+                cliente.Nombre = txtBNombreCliente.Text.Trim();
+                cliente.Apellido = txtBApellidoCliente.Text.Trim();
+                cliente.Cedula = txtBCedulaCliente.Text.Trim();
+                cliente.CorreoElectronico = txtBCorreoElectronicoCliente.Text.Trim();
+                cliente.Direccion = txtBDireccionCliente.Text.Trim();
+                negocioCliente.ActualizarCliente(cliente);
+                GuardarClientes();
+                ActualizarListaClientes();
+                LimpiarCampos();
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (listCliente.SelectedItems.Count == 0)
+                return;
+
+            int id = int.Parse(listCliente.SelectedItems[0].SubItems[0].Text);
+
+            negocioCliente.EliminarCliente(id);
+            GuardarClientes();
+            ActualizarListaClientes();
+            LimpiarCampos();
+        }
+
+        private void txtFiltrar_TextChanged(object sender, EventArgs e)
+        {
+            string filtro = txtFiltrar.Text.Trim();
+            var resultados = negocioCliente.BuscarPorNombre(filtro);
+            listCliente.Items.Clear();
+            foreach (var cliente in resultados)
+            {
+                var item = new ListViewItem(cliente.IdCliente.ToString());
+                item.SubItems.Add(cliente.Nombre);
+                item.SubItems.Add(cliente.Apellido);
+                item.SubItems.Add(cliente.Cedula);
+                item.SubItems.Add(cliente.CorreoElectronico);
+                item.SubItems.Add(cliente.Direccion);
+                listCliente.Items.Add(item);
+            }
+        }
+
+        private void listCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listCliente.SelectedItems.Count == 0)
+                return;
+
+            var item = listCliente.SelectedItems[0];
+            txtBNombreCliente.Text = item.SubItems[1].Text;
+            txtBApellidoCliente.Text = item.SubItems[2].Text;
+            txtBCedulaCliente.Text = item.SubItems[3].Text;
+            txtBCorreoElectronicoCliente.Text = item.SubItems[4].Text;
+            txtBDireccionCliente.Text = item.SubItems[5].Text;
+        }
+
+        private bool ValidarCampos()
+        {
+            // Validar campos vacíos
+            if (string.IsNullOrWhiteSpace(txtBNombreCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtBApellidoCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtBCedulaCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtBCorreoElectronicoCliente.Text) ||
+                string.IsNullOrWhiteSpace(txtBDireccionCliente.Text))
+            {
+                MessageBox.Show("Ningún campo debe estar vacío.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Validar solo letras y primera mayúscula en nombre y apellido
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtBNombreCliente.Text, @"^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$"))
+            {
+                MessageBox.Show("El nombre solo debe contener letras.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtBApellidoCliente.Text, @"^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$"))
+            {
+                MessageBox.Show("El apellido solo debe contener letras.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Validar cédula: exactamente 10 dígitos numéricos
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtBCedulaCliente.Text, @"^\d{10}$"))
+            {
+                MessageBox.Show("La cédula debe tener exactamente 10 dígitos numéricos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            // Validar correo electrónico
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtBCorreoElectronicoCliente.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("El correo electrónico no tiene un formato válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void txtBNombreCliente_TextChanged(object sender, EventArgs e)
+        {
+            CapitalizarTextoEnTiempoReal(txtBNombreCliente);
+        }
+
+        private void txtBApellidoCliente_TextChanged(object sender, EventArgs e)
+        {
+            CapitalizarTextoEnTiempoReal(txtBApellidoCliente);
+        }
+
+        private void CapitalizarTextoEnTiempoReal(TextBox textBox)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+                return;
+
+            int selStart = textBox.SelectionStart;
+            int selLength = textBox.SelectionLength;
+
+            // Capitaliza cada palabra
+            string textoOriginal = textBox.Text;
+            string textoCapitalizado = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(textoOriginal.ToLower());
+
+            if (textoOriginal != textoCapitalizado)
+            {
+                textBox.Text = textoCapitalizado;
+                // Mantener el cursor en la posición correcta
+                textBox.SelectionStart = selStart;
+                textBox.SelectionLength = selLength;
+            }
+        }
+
+        private void txtBNombreCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtBApellidoCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnAgregarProducto_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!ValidarCamposProducto())
+                    return;
+
+                negocioProducto.RegistrarProducto(
+                    txtNombreProducto.Text.Trim(),
+                    double.Parse(txtBPrecioProducto.Text.Trim()),
+                    int.Parse(txtBStockProducto.Text.Trim())
+                );
+                GuardarProductos();
+                ActualizarListaProductos();
+                LimpiarCamposProducto();
+                MessageBox.Show("Producto agregado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al agregar producto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnModificarProducto_Click(object sender, EventArgs e)
+        {
+            if (listProducto.SelectedItems.Count == 0)
+                return;
+
+            if (!ValidarCamposProducto())
+                return;
+
+            int id = int.Parse(listProducto.SelectedItems[0].SubItems[0].Text);
+            var producto = negocioProducto.BuscarPorId(id);
+            if (producto != null)
+            {
+                producto.Nombre = txtNombreProducto.Text.Trim();
+                producto.Precio = double.Parse(txtBPrecioProducto.Text.Trim());
+                producto.Stock = int.Parse(txtBStockProducto.Text.Trim());
+                negocioProducto.ActualizarProducto(producto);
+                GuardarProductos();
+                ActualizarListaProductos();
+                LimpiarCamposProducto();
+            }
+        }
+
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            if (listProducto.SelectedItems.Count == 0)
+                return;
+
+            int id = int.Parse(listProducto.SelectedItems[0].SubItems[0].Text);
+            negocioProducto.EliminarProducto(id);
+            GuardarProductos();
+            ActualizarListaProductos();
+            LimpiarCamposProducto();
+        }
+
+        private void txtBuscarProducto_TextChanged(object sender, EventArgs e)
+        {
+            string filtro = txtBuscarProducto.Text.Trim();
+            var resultados = negocio Producto.BuscarPorNombre(filtro);
+            listProducto.Items.Clear();
+            foreach (var producto in resultados)
+            {
+                var item = new ListViewItem(producto.IdProducto.ToString());
+                item.SubItems.Add(producto.Nombre);
+                item.SubItems.Add(producto.Precio.ToString("F2"));
+                item.SubItems.Add(producto.Stock.ToString());
+                listProducto.Items.Add(item);
+            }
+        }
+
+        private void listProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listProducto.SelectedItems.Count == 0)
+                return;
+
+            var item = listProducto.SelectedItems[0];
+            txtNombreProducto.Text = item.SubItems[1].Text;
+            txtBPrecioProducto.Text = item.SubItems[2].Text;
+            txtBStockProducto.Text = item.SubItems[3].Text;
+        }
+
+        private bool ValidarCamposProducto()
+        {
+            if (string.IsNullOrWhiteSpace(txtNombreProducto.Text) ||
+                string.IsNullOrWhiteSpace(txtBPrecioProducto.Text) ||
+                string.IsNullOrWhiteSpace(txtBStockProducto.Text))
+            {
+                MessageBox.Show("Ningún campo debe estar vacío.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtNombreProducto.Text, @"^[A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s]+$")) 
+            {
+                MessageBox.Show("El nombre del producto solo debe contener letras y números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!double.TryParse(txtBPrecioProducto.Text, out double precio) || precio < 0)
+            {
+                MessageBox.Show("El precio debe ser un número positivo.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (!int.TryParse(txtBStockProducto.Text, out int stock) || stock < 0)
+            {
+                MessageBox.Show("El stock debe ser un número entero positivo.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void LimpiarCamposProducto()
+        {
+            txtNombreProducto.Clear();
+            txtBPrecioProducto.Clear();
+            txtBStockProducto.Clear();
+        }
+
+        private void tmrFechaHora_Tick(object sender, EventArgs e)
+        {
+            lblFechaHora.Text = DateTime.Now.ToString("dd/MM/yyyy | HH:mm:ss");
+        }
+
+        private void FormOpciones_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Solo cerrar la aplicación si corresponde
+            if (cerrarAplicacion)
+                Application.Exit();
+        }
+
+        private void btnValidarCliente_Click(object sender, EventArgs e)
+        {
+            string cedula = txtCedulaClienteVenta.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(cedula))
+            {
+                MessageBox.Show("Ingrese la cédula del cliente.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Buscar cliente por cédula
+            var cliente = negocioCliente.ListarClientes()
+                .FirstOrDefault(c => c.Cedula == cedula);
+
+            if (cliente != null)
+            {
+                // Mostrar datos en el label solicitado
+                lblDatodClienteVenta.Text = $"Nombre: {cliente.Nombre} {cliente.Apellido}\nCédula: {cliente.Cedula}\nCorreo: {cliente.CorreoElectronico}\nDirección: {cliente.Direccion}";
+            }
+            else // Cliente no encontrado, se le pregunta si desea agregarlo
+            {
+                var result = MessageBox.Show(
+                    "Cliente no encontrado. ¿Desea ir al registro de clientes para agregarlo?",
+                    "Cliente no encontrado",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+                lblDatodClienteVenta.Text = "Nombre del Cliente:"; // Restaurar texto por defecto
+                if (result == DialogResult.Yes)
+                {
+                    tabControl1.SelectedTab = tabCliente;
+                }
+            }
+        }
+
+        private void btnValidarProducto_Click(object sender, EventArgs e)
+        {
+            // Evitar doble mensaje si el campo está vacío
+            productoValidado = null;
+            string idText = txtIDProductoVenta.Text.Trim();
+            if (string.IsNullOrEmpty(idText))
+            {
+                lblNombreProductoVenta.Text = "Nombre del Producto:";
+                MessageBox.Show("Ingrese un ID de producto válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!int.TryParse(idText, out int idProducto))
+            {
+                lblNombreProductoVenta.Text = "Nombre del Producto:";
+                MessageBox.Show("Ingrese un ID de producto válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            var producto = negocioProducto.BuscarPorId(idProducto);
+            if (producto != null)
+            {
+                productoValidado = producto;
+                // Mostrar datos en el label solicitado
+                lblNombreProductoVenta.Text = $"Nombre: {producto.Nombre}\nPrecio: ${producto.Precio:F2}\nStock: {producto.Stock}";
+            }
+            else
+            {
+                MessageBox.Show("Producto no encontrado.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                lblNombreProductoVenta.Text = "Nombre del Producto:";
+            }
+        }
+
+        private void btnAgregarCarrito_Click(object sender, EventArgs e)
+        {
+            // Validar producto
+            if (productoValidado == null)
+            {
+                MessageBox.Show("Debe validar un producto antes de agregarlo al carrito.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            // Obtener la cantidad desde el TextBox
+            int cantidad = 0;
+            int.TryParse(txtCantidadVender.Text.Trim(), out cantidad);
+            // Validar cantidad mayor a 0 y menor o igual al stock
+            if (cantidad <= 0)
+            {
+                MessageBox.Show("La cantidad debe ser mayor a 0.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (cantidad > productoValidado.Stock)
+            {
+                MessageBox.Show($"No hay suficiente stock disponible. Stock actual: {productoValidado.Stock}", "Stock insuficiente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            // Formato: Nombre - Cantidad: X - Total: $Y
+            double totalLinea = productoValidado.Precio * cantidad;
+            string item = $"{productoValidado.Nombre} - Cantidad: {cantidad} - Total: ${totalLinea:F2}";
+            listBoxCarrito.Items.Add(item);
+            // Limpiar campos de producto y cantidad
+            txtIDProductoVenta.Clear();
+            txtCantidadVender.Clear();
+            lblNombreProductoVenta.Text = "Nombre del Producto:";
+            ActualizarTotalCarrito();
+        }
+
+        private void txtIDProductoVenta_TextChanged(object sender, EventArgs e)
+        {
+            productoValidado = null;
+            lblNombreProductoVenta.Text = "Nombre del Producto:";
+        }
+
+        // Mostrar el total de la compra en un label 
+        private void ActualizarTotalCarrito()
+        {
+            double total = 0;
+            foreach (var item in listBoxCarrito.Items)
+            {
+                // Buscar la parte que contiene "Total: $" y extraer el valor
+                string itemStr = item.ToString();
+                int idx = itemStr.IndexOf("Total: $");
+                if (idx != -1)
+                {
+                    int start = idx + "Total: $".Length;
+                    int end = itemStr.IndexOf(' ', start);
+                    string totalStr;
+                    if (end == -1)
+                        totalStr = itemStr.Substring(start).Trim();
+                    else
+                        totalStr = itemStr.Substring(start, end - start).Trim();
+                    if (double.TryParse(totalStr, out double subtotal))
+                        total += subtotal;
+                }
+            }
+            // Actualizar el label con el total de la compra
+            lblTotalCarrito.Text = $"Total de la compra: ${total:F2}";
+        }
+
+        // Extrae la información de un ítem del carrito
+        private bool ParseCarritoItem(string itemStr, out string nombreProducto, out int cantidad)
+        {
+            nombreProducto = null;
+            cantidad = 0;
+            int idxCantidad = itemStr.IndexOf(" - Cantidad:");
+            if (idxCantidad == -1) return false;
+            nombreProducto = itemStr.Substring(0, idxCantidad).Trim();
+            int idxTotal = itemStr.IndexOf(" - Total:");
+            if (idxTotal == -1) return false;
+            string cantidadStr = itemStr.Substring(idxCantidad + " - Cantidad:".Length, idxTotal - (idxCantidad + " - Cantidad:".Length)).Trim();
+            return int.TryParse(cantidadStr, out cantidad);
+        }
+
+        // Obtiene la lista de productos vendidos y el total desde el carrito
+        private List<(Producto producto, int cantidad)> GetProductosVendidosDesdeCarrito(out double totalVenta)
+        {
+            var productosVendidos = new List<(Producto producto, int cantidad)>();
+            totalVenta = 0;
+            foreach (var item in listBoxCarrito.Items)
+            {
+                string itemStr = item.ToString();
+                if (!ParseCarritoItem(itemStr, out string nombreProducto, out int cantidad)) continue;
+                var producto = negocioProducto.ListarProductos().FirstOrDefault(p => p.Nombre == nombreProducto);
+                if (producto != null && cantidad <= producto.Stock)
+                {
+                    productosVendidos.Add((producto, cantidad));
+                    totalVenta += producto.Precio * cantidad;
+                }
+            }
+            return productosVendidos;
+        }
+
+        private void btnFinalizarCompra_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (listBoxCarrito.Items.Count == 0)
+                {
+                    MessageBox.Show("El carrito está vacío.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                string cedulaCliente = txtCedulaClienteVenta.Text.Trim();
+                var cliente = negocioCliente.ListarClientes().FirstOrDefault(c => c.Cedula == cedulaCliente);
+                if (cliente == null)
+                {
+                    MessageBox.Show("Debe validar un cliente antes de finalizar la compra.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                double totalVenta;
+                var productosVendidos = GetProductosVendidosDesdeCarrito(out totalVenta);
+                if (productosVendidos.Count == 0)
+                {
+                    MessageBox.Show("No hay productos válidos en el carrito.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                negocioVenta.CargarVentasDesdeTxt(rutaArchivoVenta);
+                int idCliente = cliente.IdCliente;
+                DateTime fechaVenta = DateTime.Now;
+                var ventaPrincipal = negocioVenta.RegistrarVenta(idCliente, totalVenta, fechaVenta);
+                int idVenta = ventaPrincipal.IdVenta;
+                using (var writer = new System.IO.StreamWriter(rutaArchivoVenta, true))
+                {
+                    if (new FileInfo(rutaArchivoVenta).Length == 0)
+                    {
+                        writer.WriteLine("IdVenta,IdCliente,IdProducto,Cantidad,PrecioUnitario,Total,Fecha");
+                    }
+                    foreach (var (producto, cantidad) in productosVendidos)
+                    {
+                        var venta = new Venta(idVenta, idCliente, producto.IdProducto, cantidad, producto.Precio, cantidad * producto.Precio, fechaVenta);
+                        writer.WriteLine($"{venta.IdVenta},{venta.IdCliente},{venta.IdProducto},{venta.Cantidad},{venta.PrecioUnitario},{venta.Total},{venta.Fecha:dd/MM/yyyy HH:mm}");
+                    }
+                }
+                foreach (var (producto, cantidad) in productosVendidos)
+                {
+                    producto.Stock -= cantidad;
+                    negocioProducto.ActualizarProducto(producto);
+                }
+                GuardarProductos();
+                ActualizarListaProductos();
+                listBoxCarrito.Items.Clear();
+                txtCedulaClienteVenta.Clear();
+                lblDatodClienteVenta.Text = string.Empty;
+                lblNombreProductoVenta.Text = string.Empty;
+                lblTotalCarrito.Text = "Total de la compra: $0.00";
+                MessageBox.Show($"Compra finalizada. Total: ${totalVenta:F2}", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al finalizar la compra: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnQuitarCarrito_Click(object sender, EventArgs e)
+        {
+            if (listBoxCarrito.SelectedIndex != -1)
+            {
+                listBoxCarrito.Items.RemoveAt(listBoxCarrito.SelectedIndex);
+                ActualizarTotalCarrito();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un producto del carrito para quitar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void menuItemCerrarSesion_Click(object sender, EventArgs e)
+        {
+            btnRegresarLogin_Click(sender, e);
+        }
+
+        private void menuItemSalir_Click(object sender, EventArgs e)
+        {
+            btnSalir_Click(sender, e);
+        }
+
+        private void menuItemReporteBajoStock_Click(object sender, EventArgs e)
+        {
+            // Actualizar datos antes de generar el reporte
+            negocioProducto.CargarProductosDesdeTxt(rutaArchivoProducto);
+            negocioVenta.CargarVentasDesdeTxt(rutaArchivoVenta);
+            var negocioReporte = new NegocioReporte(negocioProducto, negocioVenta);
+            var productos = negocioReporte.ObtenerProductosBajoStock(20); // Umbral configurable
+            using (var form = new FormReporteBajoStock(productos))
+                form.ShowDialog();
+        }
+
+        private void menuItemReporteMasVendido_Click(object sender, EventArgs e)
+        {
+            // Actualizar datos antes de generar el reporte
+            negocioProducto.CargarProductosDesdeTxt(rutaArchivoProducto);
+            negocioVenta.CargarVentasDesdeTxt(rutaArchivoVenta);
+            var negocioReporte = new NegocioReporte(negocioProducto, negocioVenta);
+            var reporte = negocioReporte.ObtenerProductosMasVendidos(3); // Top 3 productos
+            using (var form = new FormReporteMasVendido(reporte))
+                form.ShowDialog();
+        }
+
+        private void menuItemReporteIngresosTotales_Click(object sender, EventArgs e)
+        {
+            // Actualizar datos antes de generar el reporte
+            negocioProducto.CargarProductosDesdeTxt(rutaArchivoProducto);
+            negocioVenta.CargarVentasDesdeTxt(rutaArchivoVenta);
+            var negocioReporte = new NegocioReporte(negocioProducto, negocioVenta);
+            using (var form = new FormReporteIngresosTotales(negocioReporte))
+                form.ShowDialog();
+        }
+
+        private void btnCancelarCompra_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Está seguro de cancelar la compra?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                // Limpiar los campos y controles relacionados con la venta
+                listBoxCarrito.Items.Clear();
+                txtCedulaClienteVenta.Clear();
+                txtIDProductoVenta.Clear();
+                txtCantidadVender.Clear();
+                lblDatodClienteVenta.Text = string.Empty;
+                lblNombreProductoVenta.Text = string.Empty;
+                lblTotalCarrito.Text = "Total de la compra: $0.00";
+                productoValidado = null;
+            }
+        }
+
+        private void menuItemAcercaDe_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "PoliMarket v1.0\nDesarrolladores:\n-Fabio Pillajo\n-Martín Roca\n-Melanie Peñafiel\n-Ricardo Guerra\n2025",
+                "Acerca de",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
+
+        private void btnHistorialVentas_Click(object sender, EventArgs e)
+        {
+            using (var form = new FormHistorialVentas(negocioVenta, negocioCliente, negocioProducto, rutaArchivoVenta, rutaArchivoProducto))
+            {
+                form.ShowDialog();
+                // Al cerrar, refrescar productos en caso de cambios
+                ActualizarListaProductos();
+            }
+        }
+
+        private void menuItemHistorialVentas_Click(object sender, EventArgs e)
+        {
+            using (var form = new FormHistorialVentas(negocioVenta, negocioCliente, negocioProducto, rutaArchivoVenta, rutaArchivoProducto))
+            {
+                form.ShowDialog();
+                // Al cerrar, refrescar productos en caso de cambios
+                ActualizarListaProductos();
+            }
+        }
+
+        private void groupBoxProductoVenta_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
+}
