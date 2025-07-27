@@ -47,13 +47,13 @@
 
 - Generación de reportes
 <img width="796" height="529" alt="image" src="https://github.com/user-attachments/assets/dea4d333-7cbe-4323-a0ae-774e3f7afa09" />
-
+<br>
 <img width="302" height="276" alt="image" src="https://github.com/user-attachments/assets/e2bb4ce6-512d-4977-999f-366f6e835c37" />
-
+<br>
 <img width="320" height="203" alt="image" src="https://github.com/user-attachments/assets/53eb31e4-6ba4-41b4-9aea-f7e4d45820f4" />
-
+<br>
 <img width="290" height="228" alt="image" src="https://github.com/user-attachments/assets/9551a5e8-fc9c-4e59-a4a1-7251e79f1aa7" />
-
+<br>
 - Acerca de 
 <img width="184" height="211" alt="image" src="https://github.com/user-attachments/assets/a66d6277-3c26-41d5-b829-648207f84c25" />
 
